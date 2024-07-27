@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p>{{ title }}</p>
+        <p>{{ gender }}</p>
+        <p>{{ paginas }}</p>
+        <p>{{ autor }}</p>
+        <p>{{ ano }}</p>
+
+        <button v-on:click="ano++">acrescentar</button>
+        <button @click="ano--">reduzir</button>
+        <div v-on:click="title='tecnicas que funcionam'">esta e uma div que altera o gender</div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
